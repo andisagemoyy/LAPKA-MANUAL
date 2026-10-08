@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>LAPKA Manual JAKK</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <style>
+:root{--navy:#202124;--blue:#b84b09;--orange:#f17a32;--ink:#262629;--muted:#686971;--line:#dedfe3;--bg:#f5f5f7;--paper-width:793.7008px;--paper-height:1122.5197px;--paper-scale:1}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Segoe UI",Arial,sans-serif}button,input,textarea{font:inherit}button{cursor:pointer}a{color:var(--blue)}[hidden]{display:none!important}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #f7a15d;outline-offset:2px}input,textarea{width:100%;min-width:0;border:1px solid #c8c9ce;background:#fff;border-radius:8px;padding:10px 12px;color:var(--ink);line-height:1.4}input:focus,textarea:focus{border-color:var(--blue)}textarea{resize:vertical}input[readonly]{background:#f2f2f4;color:#5a5b62}input[aria-invalid=true]{border-color:#b93832}label{display:block;font-size:14px;font-weight:600;margin:15px 0 6px}.topbar{background:#fff;border-bottom:1px solid var(--line);color:var(--ink);display:flex;justify-content:space-between;align-items:center;padding:18px max(24px,calc((100vw - 1460px)/2));gap:20px}.brand{display:flex;align-items:center;gap:16px}.station-logo{display:block;width:78px;height:auto;object-fit:contain;flex-shrink:0}.brand h1{font-size:23px;line-height:1.2;margin:0;font-weight:700;letter-spacing:-.4px}.brand p{margin:4px 0 0;font-size:14px;color:#686971}.date-chip{text-align:right}.date-chip span{display:block;font-size:12px;color:#686971}.date-chip strong{font-size:15px;font-weight:600}.workspace{display:grid;grid-template-columns:minmax(380px,520px) minmax(0,1fr);gap:28px;max-width:1460px;margin:0 auto;padding:26px 24px 60px;align-items:start}.editor-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:13px}.editor-heading h2{font-size:19px;margin:0}.editor-heading a{font-size:14px;font-weight:600;text-decoration:none}.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;margin-bottom:16px;box-shadow:0 2px 4px #20212405}.section-heading{display:flex;align-items:center;gap:10px}.section-index{font-size:12px;font-weight:750;color:var(--blue);padding:4px 7px;background:#fff0e6;border-radius:5px}.section-heading h3{font-size:17px;font-weight:650;margin:0}.fields{display:grid;gap:14px}.fields.two{grid-template-columns:1fr 1fr}.hint{font-size:13px;color:var(--muted);line-height:1.5;margin:9px 0 0}.section-hint{margin-bottom:16px}.selected-info{padding:9px 12px;background:#fff4eb;border-left:3px solid var(--blue);border-radius:4px;font-size:14px;margin:10px 0 0}.search-wrap{position:relative}.train-options{position:absolute;top:calc(100% + 5px);z-index:10;background:#fff;box-shadow:0 12px 32px #2021241a;border:1px solid #d0d0d5;border-radius:8px;width:100%;max-height:295px;overflow-y:auto;padding:5px}.train-option{display:block;width:100%;padding:10px 11px;text-align:left;border:0;background:white;border-radius:5px;color:var(--ink)}.train-option:hover,.train-option.active{background:#fff0e6}.train-option span{font-weight:700;display:block;font-size:14px}.train-option small{display:block;font-size:13px;color:var(--muted)}.empty-options{font-size:14px;padding:12px;margin:0;color:var(--muted)}.crew-head,.crew-row{display:grid;grid-template-columns:105px minmax(0,1fr) 92px;gap:9px;align-items:center}.crew-head{font-size:12px;font-weight:600;color:var(--muted);margin-bottom:6px}.crew-row{margin-bottom:9px}.crew-role{font-size:13px;line-height:1.4;font-weight:700}.crew-row label{margin:0}.crew-row input{padding:9px 10px;font-size:14px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.weight-row{display:grid;grid-template-columns:175px 1fr;gap:18px;align-items:end;margin-top:4px}.weight-row .hint{margin-bottom:4px}.with-unit{display:flex;align-items:center;border:1px solid #c8c9ce;border-radius:8px;overflow:hidden}.with-unit input{border:0;border-radius:0}.with-unit span{padding:8px 12px;background:#f2f2f4;font-size:14px;color:var(--muted)}.taspat-row{margin-top:15px}.taspat-label{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:6px}.taspat-label label{margin:0}.remove-taspat{border:0;background:none;color:#ab3434;font-size:13px;text-decoration:underline;padding:4px}.text-button{border:1px dashed #cacbd1;background:#fafafa;color:var(--blue);border-radius:8px;width:100%;padding:9px;margin-top:10px;font-weight:600;font-size:14px}.text-button:hover{background:#fff0e6}.optional{font-size:12px;color:var(--muted);font-weight:400;margin-left:6px}.card h4{font-size:14px;font-weight:700;margin:20px 0 -6px}.preview-column{position:sticky;top:22px;scroll-margin-top:16px;min-width:0}.preview-toolbar{background:#fff;border:1px solid var(--line);border-radius:12px;padding:19px 20px;margin-bottom:16px}.preview-title{display:flex;justify-content:space-between;gap:12px;align-items:center}.eyebrow{font-size:11px;font-weight:700;letter-spacing:1.1px;color:var(--muted)}.preview-title h2{font-size:19px;line-height:1.35;margin:3px 0 0;font-weight:650}.paper-label{font-size:12px;border:1px solid var(--line);padding:4px 9px;border-radius:5px;color:var(--muted)}.document-tabs{display:flex;background:#f0f0f2;border:1px solid var(--line);padding:4px;border-radius:8px;gap:4px;margin:17px 0 14px}.document-tabs button{flex:1;border:0;background:transparent;color:var(--muted);padding:9px 12px;border-radius:5px;font-size:14px;display:flex;align-items:center;justify-content:center;gap:9px}.document-tabs button[aria-selected=true]{background:var(--navy);color:white;box-shadow:0 2px 4px #2021241a}.output-actions{display:flex;gap:9px}.output-actions button{border-radius:7px;padding:10px 14px;font-size:14px;font-weight:650;flex:1}.primary{background:var(--blue);color:#fff;border:1px solid var(--blue)}.primary:hover{background:#993d07}.secondary{background:white;color:var(--blue);border:1px solid #c8c9ce}.secondary:hover{background:#fff0e6}.validation{background:#fff4eb;color:#924700;border:1px solid #f2cbab;padding:9px 11px;border-radius:6px;font-size:13px;margin:10px 0 0}.paper-stage{background:#e6e7eb;padding:18px;border-radius:10px;border:1px solid #d5d6dc;overflow:hidden}.paper-wrapper{margin:auto;width:calc(var(--paper-width)*var(--paper-scale));height:calc(var(--paper-height)*var(--paper-scale));position:relative}.document-paper{width:var(--paper-width);height:var(--paper-height);min-height:var(--paper-height);padding:10mm;position:relative;background:#fff;box-shadow:0 3px 15px #20212412;transform:scale(var(--paper-scale));transform-origin:top left;color:#000;font:8pt/1.22 "Times New Roman",Times,serif;overflow-wrap:anywhere}.doc-model{font-weight:bold;margin:0 0 5px}.doc-header{display:grid;grid-template-columns:64% 36%;margin-bottom:8px;font-weight:bold;gap:0}.doc-title{text-decoration:underline}.doc-header p{margin:0}.manual-red{color:red}.doc-service-title{text-decoration:underline}.doc-list{margin:0;padding-left:16px}.doc-list>li{padding-left:1px;margin-bottom:3px;white-space:normal}.doc-list strong{font-weight:700}.doc-taspat{margin:2px 0 0;white-space:pre-wrap}.doc-note{white-space:pre-wrap;min-height:8px}.doc-signatures{display:grid;grid-template-columns:68% 32%;margin-top:32px;gap:0;break-inside:avoid}.doc-signature-heading{font-weight:bold;text-decoration:underline;margin:0 0 32px}.doc-signature-name{font-weight:bold;margin:0;min-height:12px}.doc-signature-nipp{font-weight:bold;margin:0}.doc-footer{margin:12px 0 0;font-size:8pt}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);z-index:30;background:var(--navy);color:white;padding:12px 18px;border-radius:8px;font-size:14px;box-shadow:0 5px 25px #20212425;width:max-content;max-width:90vw}#printRoot{display:none}
+@media(min-width:1200px){.editor-heading a{display:none}}
+@media(max-width:1050px){.workspace{grid-template-columns:minmax(340px,440px) minmax(0,1fr);gap:18px;padding:22px 18px}.card{padding:18px}.preview-toolbar{padding:16px}.preview-title h2{font-size:17px}.paper-stage{padding:12px}.output-actions{flex-direction:column}.crew-head,.crew-row{grid-template-columns:95px minmax(0,1fr) 80px;gap:7px}}
+@media(max-width:800px){.topbar{padding:15px 18px}.workspace{display:block;max-width:650px;padding:20px 16px 40px}.preview-column{position:static;margin-top:28px}.output-actions{flex-direction:row}.brand h1{font-size:21px}.date-chip strong{font-size:13px}}
+@media(max-width:460px){.topbar{padding:14px 14px;gap:10px;align-items:flex-start}.station-logo{width:58px;height:auto}.brand{gap:10px}.brand h1{font-size:19px}.brand p{font-size:12px}.date-chip{max-width:135px}.date-chip span{font-size:11px}.date-chip strong{font-size:12px;line-height:1.5;display:block}.workspace{padding:17px 10px 35px}.card{padding:17px 14px}.fields.two{gap:10px}.crew-head{display:none}.crew-row{grid-template-columns:minmax(0,1fr) 86px;gap:8px;margin-bottom:14px}.crew-role{grid-column:1/-1}.crew-row input{font-size:16px}.weight-row{grid-template-columns:145px 1fr;gap:12px}.weight-row .hint{font-size:12px}.preview-title h2{font-size:17px}.paper-stage{padding:9px}.output-actions button{padding:10px 9px;font-size:13px}}
+@page{size:A4 portrait;margin:10mm}
+@media print{html,body{background:white!important;margin:0;padding:0}body>.topbar,body>.workspace,body>.toast,body>noscript{display:none!important}#printRoot{display:block!important;color:#000}#printRoot .document-paper{width:190mm;height:auto;min-height:0;padding:0;box-shadow:none;transform:none;font-size:8pt;line-height:1.22}#printRoot .doc-signatures{break-inside:avoid}#printRoot .doc-header{break-inside:avoid}.manual-red{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+.half-sheet{position:relative;width:190mm;height:128.5mm;break-inside:avoid}.report-content{position:absolute;top:0;left:0;width:100%;transform:scale(var(--report-fit,1));transform-origin:top left}.document-paper::after{content:"";position:absolute;top:50%;left:10mm;right:10mm;border-top:1px dashed #dedfe3;pointer-events:none}.formation-summary{background:#f2f2f4;padding:9px 10px;border-radius:6px;overflow-wrap:anywhere;max-height:110px;overflow:auto}.paper-label{white-space:nowrap}
+@media print{#printRoot .document-paper::after{display:none}#printRoot .half-sheet{height:128.5mm;max-height:128.5mm;width:190mm;break-inside:avoid}#printRoot .report-content{transform:scale(var(--report-fit,1));transform-origin:top left}}
+
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><img class="station-logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyOTQuNzQgMTI0LjIyIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzJkMmE3MDt9LmNscy0ye2ZpbGw6I2VkNmIyMzt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkxvZ28gS0FJIEJhcnU8L3RpdGxlPjxnIGlkPSJMYXllcl8yIj48ZyBpZD0iTGF5ZXJfMS0yIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik05OS41OCwxMjQuMjJoMjguNTZsLTYuNTUtMTAuNzdabTE2LjY3LTE5LjUzTDg2LjU2LDU1LjkxLDE0NC4xMiwwSDk4LjY1YTEzLjY1LDEzLjY1LDAsMCwwLTkuNTQsMy44OEw0OC43OSw0My4yOCw1My4zMywwSDEyLjI3TDAsMTE2LjgxYTYuNzEsNi43MSwwLDAsMCw2LjY4LDcuNDJoMzMuNkw0My4wNyw5OCw1NS40NSw4NmwyMS43OCwzNC40M2E4LjEzLDguMTMsMCwwLDAsNi44NywzLjc4SDk5LjU4bDcuODEtMTUuNTdaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTQxLDEyNC4yMmw1NS42MS0zMy44MSw3LjA4LDI4LjcxYTYuNzEsNi43MSwwLDAsMCw2LjUyLDUuMTFoMzZMMjMwLjEzLDcwbDYxLjI0LTM3LjI0LjI2LTIuNS0xOTIsOTMuOTVabTgzLjM4LTczLjY1TDIwOS4zNywwSDE3NGExOS41MiwxOS41MiwwLDAsMC0xNy40NSwxMC43N0wxMDYsMTExLjM3LDI5MiwyNi41MmwuMjktMi44NVpNMTY0LjYsNzQuMjQsMTc3LDQ4bDMuMjctNy4yNWEyLjIzLDIuMjMsMCwwLDEsNC4xOS4zOGw1LjY3LDIzWiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTI2OS41MywwYTE5LjUyLDE5LjUyLDAsMCwwLTE5LjQxLDE3LjQ5bC0yLjUsMjMuODgsNDQuNjktMTcuN0wyOTQuNzQsMFptLTMwLjYsMTI0LjIyaDQzbDkuNDItOTEuNDVMMjQ1LjYsNjAuNjFaIi8+PC9nPjwvZz48L3N2Zz4=" alt="KAI" width="78" height="33"><div><h1>LAPKA Manual</h1><p>Dinas rangkaian · Jakarta Kota</p></div></div>
+    <div class="date-chip"><span>Tanggal dokumen · WIB</span><strong id="todayLabel"></strong></div>
+  </header>
+  <main class="workspace">
+    <div class="editor">
+      <div class="editor-heading"><h2>Isi laporan</h2><a href="#hasil">Lihat hasil</a></div>
+      <form id="reportForm" autocomplete="off">
+        <section class="card">
+          <div class="section-heading"><span class="section-index">01</span><h3>Kereta api</h3></div>
+          <label for="trainSearch">Cari nomor atau nama KA</label>
+          <div class="search-wrap">
+            <input id="trainSearch" type="search" placeholder="Contoh: R26, R14, R7002, Muria" role="combobox" aria-autocomplete="list" aria-controls="trainOptions" aria-expanded="false" spellcheck="false">
+            <div id="trainOptions" class="train-options" role="listbox" aria-label="Pilihan kereta api" hidden></div>
+          </div>
+          <p id="selectedInfo" class="selected-info"></p>
+          <div class="fields two">
+            <div><label for="trainNumber">Nomor KA</label><input id="trainNumber" required placeholder="R26" spellcheck="false"></div>
+            <div><label for="trainName">Nama KA</label><input id="trainName" required placeholder="MURIA"></div>
+          </div>
+          <div class="fields two">
+            <div><label for="relation">Relasi</label><input id="relation" required value="JAKK - GMR"></div>
+            <div><label for="dateDisplay">Tanggal otomatis</label><input id="dateDisplay" readonly aria-describedby="dateHint"></div>
+          </div>
+          <p class="hint" id="dateHint">Tanggal, bulan, dan tahun mengikuti waktu Jakarta.</p>
+        </section>
+
+        <section class="card">
+          <div class="section-heading"><span class="section-index">02</span><h3>Kru kereta api</h3></div>
+          <p class="hint section-hint">Isi yang bertugas. Kru yang kosong tidak muncul di laporan.</p>
+          <div class="crew-head" aria-hidden="true"><span>Jabatan</span><span>Nama</span><span>NIPP</span></div>
+          <div id="crewFields"></div>
+        </section>
+
+        <section class="card">
+          <div class="section-heading"><span class="section-index">03</span><h3>Lokomotif dan rangkaian</h3></div>
+          <label for="locomotive">Nomor lokomotif</label><input id="locomotive" required placeholder="Contoh: CC2061602" spellcheck="false">
+          <label for="formation">Nomor sarana dalam rangkaian</label>
+          <textarea id="formation" rows="5" required placeholder="1. P 01803&#10;2. T1 00904&#10;3. K1 02346&#10;4. K1 02529" spellcheck="false" aria-describedby="formationHint formationSummary"></textarea>
+          <p class="hint" id="formationHint">Tempel daftar seperti contoh. Nomor urut dipertahankan dan spasi dalam nomor sarana disatukan. Jika tanpa nomor urut, urutan dibuat otomatis.</p>
+          <p class="hint formation-summary" id="formationSummary" aria-live="polite"></p>
+          <div class="weight-row"><div><label for="weight">Berat rangkaian</label><div class="with-unit"><input id="weight" inputmode="decimal" value="479.7" required aria-describedby="weightHint"><span>ton</span></div></div><p id="weightHint" class="hint">Berat awal mengikuti contoh dan dapat diubah.</p></div>
+        </section>
+
+        <section class="card">
+          <div class="section-heading"><span class="section-index">04</span><h3>TASPAT dan catatan</h3></div>
+          <div id="taspatFields"></div>
+          <button type="button" class="text-button" id="addTaspat">+ Tambah TASPAT</button>
+          <label for="notes">Catatan lain dalam perjalanan <span class="optional">opsional</span></label>
+          <textarea id="notes" rows="3" placeholder="Kosongkan jika tidak ada catatan."></textarea>
+        </section>
+
+        <section class="card">
+          <div class="section-heading"><span class="section-index">05</span><h3>Petugas</h3></div>
+          <h4>Petugas Schowing / TKA <span class="optional">opsional</span></h4>
+          <div class="fields two"><div><label for="schowingName">Nama</label><input id="schowingName" placeholder="Boleh dikosongkan"></div><div><label for="schowingNipp">NIPP</label><input id="schowingNipp" inputmode="numeric" placeholder="NIPP" spellcheck="false"></div></div>
+          <h4>PPKA / PAP</h4>
+          <div class="fields two"><div><label for="officerName">Nama</label><input id="officerName" placeholder="Nama petugas"></div><div><label for="officerNipp">NIPP</label><input id="officerNipp" inputmode="numeric" placeholder="NIPP" spellcheck="false"></div></div>
+        </section>
+      </form>
+    </div>
+
+    <section class="preview-column" id="hasil" aria-labelledby="previewHeading">
+      <div class="preview-toolbar">
+        <div class="preview-title"><div><span class="eyebrow">PRATINJAU DOKUMEN</span><h2 id="previewHeading">Laporan Perjalanan Kereta Api</h2></div><span class="paper-label">½ A4 atas</span></div>
+        <div class="document-tabs" role="tablist" aria-label="Jenis dokumen">
+          <button type="button" id="tabLapka" role="tab" aria-controls="previewPanel" aria-selected="true" data-type="LAPKA">O.82 <strong>LAPKA</strong></button>
+          <button type="button" id="tabLkdr" role="tab" aria-controls="previewPanel" aria-selected="false" tabindex="-1" data-type="LKDR">O.83 <strong>LKDR</strong></button>
+        </div>
+        <div class="output-actions"><button type="button" id="printButton" class="primary">Cetak / Simpan PDF</button><button type="button" id="wordButton" class="secondary">Unduh Word</button></div>
+        <p class="hint print-hint">Hasil di separuh atas A4. Saat mencetak, pilih A4, skala 100%, dan matikan header/footer browser.</p>
+        <p id="validationMessage" class="validation" role="status" hidden></p>
+      </div>
+      <div id="previewPanel" role="tabpanel" aria-labelledby="tabLapka">
+        <div class="paper-stage"><div class="paper-wrapper"><article id="documentPreview" class="document-paper"></article></div></div>
+      </div>
+    </section>
+  </main>
+  <div id="printRoot" aria-hidden="true"></div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <noscript>Aktifkan JavaScript untuk mengisi dan membuat LAPKA/LKDR.</noscript>
+<script>
+// Pasangan dinas rangkaian dari lok dinas pada proyek laporan JAKK.
+// Nomor Lxx-1 menjadi Rxx; awalan D1/ dan akhiran A/C tetap dipertahankan.
+// Nama MURIA mengikuti pembaruan pengguna per 1 Oktober 2026.
+// aliases dipakai untuk pencarian, bukan untuk mengganti nomor di dokumen.
+const DAFTAR_KA = [
+  {
+    "number": "R26",
+    "name": "MURIA",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R26"
+    ]
+  },
+  {
+    "number": "R130",
+    "name": "Papandayan",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R130"
+    ]
+  },
+  {
+    "number": "R50F",
+    "name": "Purwojaya fakultatif",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R50F"
+    ]
+  },
+  {
+    "number": "R20",
+    "name": "MURIA",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R20"
+    ]
+  },
+  {
+    "number": "R132",
+    "name": "Parahyangan",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R132"
+    ]
+  },
+  {
+    "number": "R46",
+    "name": "Taksaka",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R46"
+    ]
+  },
+  {
+    "number": "R2",
+    "name": "Anggrek",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R2"
+    ]
+  },
+  {
+    "number": "R16",
+    "name": "Argo Dwipangga",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R16"
+    ]
+  },
+  {
+    "number": "D1/R7050",
+    "name": "Pandalungan",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R7050"
+    ]
+  },
+  {
+    "number": "R138",
+    "name": "Parahyangan",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R138"
+    ]
+  },
+  {
+    "number": "R40",
+    "name": "Sembrani",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R40"
+    ]
+  },
+  {
+    "number": "R62",
+    "name": "Manahan",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R62"
+    ]
+  },
+  {
+    "number": "R38",
+    "name": "Brawijaya",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R38"
+    ]
+  },
+  {
+    "number": "R18",
+    "name": "MURIA",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R18"
+    ]
+  },
+  {
+    "number": "D1/R7008C",
+    "name": "Tambahan GMR - YK",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R7008C",
+      "R7008"
+    ]
+  },
+  {
+    "number": "R36",
+    "name": "Gajayana",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R36"
+    ]
+  },
+  {
+    "number": "R42",
+    "name": "Sembrani",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R42"
+    ]
+  },
+  {
+    "number": "R32",
+    "name": "Pandalungan",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R32"
+    ]
+  },
+  {
+    "number": "R4",
+    "name": "Anggrek",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R4"
+    ]
+  },
+  {
+    "number": "R14",
+    "name": "Argo Lawu",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R14"
+    ]
+  },
+  {
+    "number": "D1/R76",
+    "name": "Mataram",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R76"
+    ]
+  },
+  {
+    "number": "R64",
+    "name": "Manahan",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R64"
+    ]
+  },
+  {
+    "number": "R30F",
+    "name": "Argo Anjasmoro",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R30F"
+    ]
+  },
+  {
+    "number": "D1/R7002A",
+    "name": "Gajayana Tambahan",
+    "relation": "JAKK - GMR",
+    "aliases": [
+      "R7002A",
+      "R7002"
+    ]
+  }
+];
+
+</script>
+<script>
+"use strict";
+
+const ROLES = ["MAS", "ASMAS", "KDR", "TKA", "PENGAWALAN"];
+const DEFAULT_TASPAT = "antara sta JAKK-GMR km 0+300 kecepatan 20";
+const MONTHS = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+const $ = id => document.getElementById(id);
+const escapeHTML = text => String(text ?? "").replace(/[&<>"']/g, char => ({"&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"}[char]));
+const escapeXML = escapeHTML;
+let activeType = "LAPKA";
+let lastDate = "";
+let taspatCounter = 0;
+let options = [];
+let optionIndex = -1;
+let toastTimer;
+const originalTitle = document.title;
+
+function jakartaDate(now = new Date()) {
+  const parts = Object.fromEntries(new Intl.DateTimeFormat("en-CA", {timeZone:"Asia/Jakarta", year:"numeric", month:"2-digit", day:"2-digit"}).formatToParts(now).filter(part => part.type !== "literal").map(part => [part.type, part.value]));
+  return {iso:`${parts.year}-${parts.month}-${parts.day}`, month:parts.month, year:parts.year, day:parts.day, text:`${parts.day} ${MONTHS[Number(parts.month)-1]} ${parts.year}`};
+}
+
+function buildCrewFields() {
+  $("crewFields").innerHTML = ROLES.map((role, i) => `<div class="crew-row"><span class="crew-role">${role}</span><label><span class="sr-only">Nama ${role}</span><input id="crewName${i}" placeholder="Nama" aria-label="Nama ${role}"></label><label><span class="sr-only">NIPP ${role}</span><input id="crewNipp${i}" placeholder="NIPP" inputmode="numeric" spellcheck="false" aria-label="NIPP ${role}"></label></div>`).join("");
+}
+
+function addTaspat(value = "", focus = true) {
+  const id = ++taspatCounter;
+  const row = document.createElement("div");
+  row.className = "taspat-row";
+  row.innerHTML = `<div class="taspat-label"><label for="taspat${id}">TASPAT</label><button class="remove-taspat" type="button" aria-label="Hapus TASPAT">Hapus</button></div><textarea id="taspat${id}" class="taspat-input" rows="2" placeholder="Lokasi, kilometer, dan batas kecepatan"></textarea>`;
+  row.querySelector("textarea").value = value;
+  row.querySelector("button").addEventListener("click", () => {row.remove(); renameTaspat(); render(); $("addTaspat").focus();});
+  $("taspatFields").appendChild(row);
+  renameTaspat();
+  render();
+  if (focus) row.querySelector("textarea").focus();
+}
+
+function renameTaspat() {
+  document.querySelectorAll(".taspat-row").forEach((row, index) => {
+    row.querySelector("label").textContent = `TASPAT ${index+1}`;
+    row.querySelector("button").setAttribute("aria-label", `Hapus TASPAT ${index+1}`);
+  });
+}
+
+function selectTrain(train) {
+  $("trainNumber").value = train.number;
+  $("trainName").value = train.name;
+  $("relation").value = train.relation;
+  $("trainSearch").value = `${train.number} · ${train.name}`;
+  closeOptions();
+  render();
+}
+
+function showOptions() {
+  const currentLabel = `${$("trainNumber").value} · ${$("trainName").value}`;
+  const query = $("trainSearch").value.trim() === currentLabel ? "" : $("trainSearch").value.trim().toLocaleLowerCase("id");
+  options = DAFTAR_KA.filter(train => !query || [train.number, train.name, ...train.aliases].some(value => value.toLocaleLowerCase("id").includes(query)));
+  optionIndex = -1;
+  $("trainOptions").innerHTML = options.length ? options.map((train, i) => `<button type="button" class="train-option" id="trainOption${i}" role="option" aria-selected="false" data-index="${i}"><span>${escapeHTML(train.number)} · ${escapeHTML(train.name)}</span><small>${escapeHTML(train.relation)}</small></button>`).join("") : '<p class="empty-options">Tidak ditemukan. Isi nomor dan nama KA di kolom bawah.</p>';
+  $("trainOptions").hidden = false;
+  $("trainSearch").setAttribute("aria-expanded", "true");
+  $("trainSearch").removeAttribute("aria-activedescendant");
+}
+
+function closeOptions() {
+  $("trainOptions").hidden = true;
+  $("trainSearch").setAttribute("aria-expanded", "false");
+  $("trainSearch").removeAttribute("aria-activedescendant");
+}
+
+function searchKeyboard(event) {
+  if (event.key === "Escape") return closeOptions();
+  if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+    event.preventDefault();
+    if ($("trainOptions").hidden) showOptions();
+    if (!options.length) return;
+    optionIndex = event.key === "ArrowDown" ? (optionIndex+1)%options.length : (optionIndex <= 0 ? options.length-1 : optionIndex-1);
+    document.querySelectorAll(".train-option").forEach((option, i) => {option.classList.toggle("active", i === optionIndex); option.setAttribute("aria-selected", String(i === optionIndex));});
+    $("trainSearch").setAttribute("aria-activedescendant", `trainOption${optionIndex}`);
+    $(`trainOption${optionIndex}`).scrollIntoView({block:"nearest"});
+  }
+  if (event.key === "Enter") {
+    event.preventDefault();
+    if (!$("trainOptions").hidden && options.length) {selectTrain(options[Math.max(optionIndex,0)]); $("trainSearch").focus();}
+  }
+}
+
+function parseFormation(value) {
+  // Contoh: "1. P 01803", "2. T1 00904", "(3) K102346".
+  // Spasi di dalam nomor sarana disatukan; angka nol awal tetap berupa teks.
+  const source = String(value).toUpperCase().replace(/\r\n?/g, "\n")
+    .replace(/[ \t]+(?=\d+\s*[.):\-]\s*[A-Z])/g, "\n");
+  const pattern = /(?:(?:\(\s*(\d+)\s*\)|(\d+)\s*[.):\-]\s*|(\d+)\s+(?=[A-Z]))\s*)?(\b[A-Z]{1,3}(?:[ \t]*\d+)+)\b/g;
+  const result = [];
+  let nextOrder = 1;
+  for (const match of source.matchAll(pattern)) {
+    const code = match[4].replace(/[ \t]+/g, "");
+    if ((code.match(/\d/g) || []).length < 4) continue;
+    const explicit = match[1] || match[2] || match[3];
+    const order = explicit ? Number(explicit) : nextOrder;
+    result.push({order, code});
+    nextOrder = order + 1;
+  }
+  return result;
+}
+
+function speedParts(text) {
+  const result = [];
+  const pattern = /\bkecepatan\s+\d+(?:[.,]\d+)?(?:\s*km\s*\/\s*jam)?/gi;
+  let position = 0;
+  for (const match of String(text).matchAll(pattern)) {
+    if (match.index > position) result.push({text:text.slice(position,match.index),bold:false});
+    result.push({text:match[0],bold:true});
+    position = match.index+match[0].length;
+  }
+  if (position < text.length) result.push({text:text.slice(position),bold:false});
+  return result;
+}
+function taspatHTML(text) {
+  return speedParts(text).map(part => part.bold ? `<strong>${escapeHTML(part.text)}</strong>` : escapeHTML(part.text)).join("");
+}
+
+function formData() {
+  const date = jakartaDate();
+  const value = id => $(id).value.trim();
+  return {
+    date, type:activeType,
+    number:value("trainNumber").toUpperCase(), name:value("trainName").toUpperCase(), relation:value("relation").toUpperCase(),
+    crew:ROLES.map((role,i) => ({role, name:value(`crewName${i}`).toUpperCase(), nipp:value(`crewNipp${i}`)})).filter(person => person.name || person.nipp),
+    locomotive:value("locomotive").toUpperCase(), formation:parseFormation(value("formation")), weight:value("weight").replace(",", "."),
+    taspat:Array.from(document.querySelectorAll(".taspat-input"), field => field.value.trim()).filter(Boolean), notes:value("notes"),
+    schowing:{name:value("schowingName").toUpperCase(), nipp:value("schowingNipp")},
+    officer:{name:value("officerName").toUpperCase(), nipp:value("officerNipp")}
+  };
+}
+
+function docTitle(type) {return type === "LAPKA" ? "LAPORAN PERJALANAN KERETA API (LAPKA)" : "LAPORAN KONDEKTUR (LKDR)";}
+function docNumber(data) {return `MANUAL/${data.type}/JAKK/${data.date.month}/${data.date.year}`;}
+function formationText(data) {return data.formation.map(item => `(${item.order}) ${item.code}`).join(", ");}
+
+function reportHTML(data) {
+  const esc = escapeHTML;
+  const crew = data.crew.map(person => `<li><strong>${person.role}</strong> ${esc(person.name || "........................")} ${person.nipp ? `(${esc(person.nipp)}) ` : ""}${esc(data.date.text)} dinas ${esc(data.relation)}</li>`).join("");
+  const signature = (heading,person) => `<div><p class="doc-signature-heading">${heading}</p><p class="doc-signature-name">${esc(person.name || "..................................")}</p><p class="doc-signature-nipp">Nipp. ${esc(person.nipp)}</p></div>`;
+  return `<p class="doc-model">${data.type === "LAPKA" ? "O.82" : "O.83"}</p><div class="doc-header"><div><p class="doc-title">${docTitle(data.type)}</p><p>No. <span class="manual-red">MANUAL</span>/${data.type}/JAKK/${esc(data.date.month)}/${esc(data.date.year)}</p></div><div><p class="doc-service-title">KA ${esc(data.number || "........")}, DINAS RANGKAIAN ${esc(data.name || "........................")}, Tgl ${esc(data.date.text)}</p><p>KA PNP Relasi ${esc(data.relation)}</p></div></div><ol class="doc-list">${crew}<li><strong>LOK</strong> ${esc(data.locomotive || "........................")}</li><li><strong>RANGKAIAN</strong> ${esc(formationText(data))}${data.formation.length ? "." : ""}<br>Berat : <strong><u>${esc(data.weight)}</u></strong> Ton</li><li><strong>TASPAT :</strong>${data.taspat.map(text => `<p class="doc-taspat">${taspatHTML(text)}</p>`).join("")}</li><li>Catatan lain dalam perjalanan :<div class="doc-note">${esc(data.notes)}</div></li></ol><div class="doc-signatures">${signature("Petugas Schowing/TKA",data.schowing)}${signature("PPKA / PAP",data.officer)}</div><p class="doc-footer">Keterangan : (*) Input Kru KA Manual</p>`;
+}
+
+function reportFrame(data) {
+  return `<div class="half-sheet"><div class="report-content">${reportHTML(data)}</div></div>`;
+}
+
+function fitPaper() {
+  const stage = document.querySelector(".paper-stage");
+  const available = stage.clientWidth - parseFloat(getComputedStyle(stage).paddingLeft) - parseFloat(getComputedStyle(stage).paddingRight);
+  const scale = Math.min(1, available/(210/25.4*96));
+  stage.style.setProperty("--paper-scale", Math.max(.1,scale));
+  const content = $("documentPreview").querySelector(".report-content");
+  const frame = $("documentPreview").querySelector(".half-sheet");
+  if (content && frame) {
+    const fit = Math.min(1, frame.clientHeight/Math.max(content.scrollHeight,1));
+    content.style.setProperty("--report-fit", fit);
+  }
+}
+
+function render() {
+  const data = formData();
+  lastDate = data.date.iso;
+  $("todayLabel").textContent = data.date.text;
+  $("dateDisplay").value = data.date.text;
+  $("selectedInfo").textContent = `${data.number || "Nomor KA belum diisi"} · ${data.name || "Nama KA belum diisi"}`;
+  $("documentPreview").innerHTML = reportFrame(data);
+  $("formationSummary").textContent = data.formation.length ? `${data.formation.length} sarana terbaca: ${formationText(data)}` : "Tempel nomor urut dan nomor sarana untuk melihat hasil pembacaan.";
+  $("previewHeading").textContent = activeType === "LAPKA" ? "Laporan Perjalanan Kereta Api" : "Laporan Kondektur";
+  $("printButton").setAttribute("aria-label", `Cetak atau simpan PDF ${activeType}`);
+  $("wordButton").setAttribute("aria-label", `Unduh Word ${activeType}`);
+  requestAnimationFrame(fitPaper);
+}
+
+function setDocumentType(type) {
+  activeType = type;
+  document.querySelectorAll(".document-tabs button").forEach(tab => {const selected = tab.dataset.type === type; tab.setAttribute("aria-selected",String(selected)); tab.tabIndex = selected ? 0 : -1;});
+  $("previewPanel").setAttribute("aria-labelledby", type === "LAPKA" ? "tabLapka" : "tabLkdr");
+  render();
+}
+
+function validate() {
+  const required = ["trainNumber","trainName","relation","locomotive","formation","weight"];
+  for (const id of required) $(id).removeAttribute("aria-invalid");
+  const missing = required.filter(id => !$(id).value.trim());
+  const weight = $("weight").value.trim().replace(",", ".");
+  if (weight && (!/^\d+(\.\d+)?$/.test(weight) || Number(weight) <= 0)) missing.push("weight");
+  const formation = parseFormation($("formation").value);
+  const invalidOrder = formation.some(item => !Number.isSafeInteger(item.order) || item.order < 1);
+  const repeatedOrder = new Set(formation.map(item=>item.order)).size !== formation.length;
+  if ((!formation.length || invalidOrder || repeatedOrder) && !missing.includes("formation")) missing.push("formation");
+  if (missing.length) {
+    missing.forEach(id => $(id).setAttribute("aria-invalid","true"));
+    $("validationMessage").textContent = invalidOrder || repeatedOrder ? "Periksa nomor urut rangkaian: gunakan nomor positif dan jangan mengulang nomor yang sama." : missing.includes("weight") && weight ? "Berat harus berupa angka lebih dari 0. Lengkapi juga kolom yang ditandai." : "Lengkapi nomor KA, nama KA, relasi, lokomotif, rangkaian, dan berat sebelum membuat dokumen.";
+    $("validationMessage").hidden = false;
+    $(missing[0]).scrollIntoView({block:"center",behavior:"smooth"});
+    $(missing[0]).focus({preventScroll:true});
+    return false;
+  }
+  $("validationMessage").hidden = true;
+  return true;
+}
+
+function filename(data, extension) {return `${data.type}-${data.number.replace(/[^a-z0-9_-]/gi,"-")}-${data.date.iso}.${extension}`;}
+function preparePrint() {
+  const data = formData();
+  $("documentPreview").innerHTML = reportFrame(data);
+  fitPaper();
+  const fit = $("documentPreview").querySelector(".report-content").style.getPropertyValue("--report-fit") || "1";
+  $("printRoot").innerHTML = `<article class="document-paper">${reportFrame(data)}</article>`;
+  $("printRoot").querySelector(".report-content").style.setProperty("--report-fit",fit);
+  document.title = filename(data,"pdf").replace(/\.pdf$/,"");
+}
+
+function printReport() {
+  if (!validate()) return;
+  closeOptions();
+  render();
+  preparePrint();
+  window.print();
+}
+
+function toast(text) {
+  $("toast").textContent = text; $("toast").hidden = false;
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => {$("toast").hidden = true;}, 3500);
+}
+
+// DOCX asli (OOXML dalam ZIP) tanpa CDN atau pustaka eksternal.
+// ZIP memakai metode store agar dapat dibuat di browser, termasuk saat offline.
+function makeZip(entries) {
+  const encoder = new TextEncoder();
+  const locals = [], centrals = [];
+  let offset = 0;
+  const crcTable = Uint32Array.from({length:256},(_,n) => {for(let i=0;i<8;i++) n = n&1 ? 0xedb88320^(n>>>1) : n>>>1; return n>>>0;});
+  const crc32 = bytes => {let crc=0xffffffff; for(const byte of bytes) crc=crcTable[(crc^byte)&255]^(crc>>>8); return (crc^0xffffffff)>>>0;};
+  for(const [name,text] of entries) {
+    const nameBytes=encoder.encode(name), bytes=encoder.encode(text), crc=crc32(bytes);
+    const local=new Uint8Array(30+nameBytes.length); const lv=new DataView(local.buffer);
+    lv.setUint32(0,0x04034b50,true); lv.setUint16(4,20,true); lv.setUint16(6,0x800,true); lv.setUint16(12,0x21,true);
+    lv.setUint32(14,crc,true); lv.setUint32(18,bytes.length,true); lv.setUint32(22,bytes.length,true); lv.setUint16(26,nameBytes.length,true); local.set(nameBytes,30);
+    locals.push(local,bytes);
+    const central=new Uint8Array(46+nameBytes.length); const cv=new DataView(central.buffer);
+    cv.setUint32(0,0x02014b50,true); cv.setUint16(4,20,true); cv.setUint16(6,20,true); cv.setUint16(8,0x800,true); cv.setUint16(14,0x21,true);
+    cv.setUint32(16,crc,true); cv.setUint32(20,bytes.length,true); cv.setUint32(24,bytes.length,true); cv.setUint16(28,nameBytes.length,true); cv.setUint32(42,offset,true); central.set(nameBytes,46);
+    centrals.push(central); offset+=local.length+bytes.length;
+  }
+  const centralSize=centrals.reduce((sum,item)=>sum+item.length,0);
+  const end=new Uint8Array(22), ev=new DataView(end.buffer);
+  ev.setUint32(0,0x06054b50,true); ev.setUint16(8,entries.length,true); ev.setUint16(10,entries.length,true); ev.setUint32(12,centralSize,true); ev.setUint32(16,offset,true);
+  return new Blob([...locals,...centrals,end],{type:"application/vnd.openxmlformats-officedocument.wordprocessingml.document"});
+}
+
+function docxBlob(data) {
+  const x=escapeXML;
+  const scale = Math.min(1,Math.max(.1,data.printScale || 1));
+  const fontSize = Math.max(2,Math.floor(16*scale));
+  const run=(text,bold=false,underline=false,color="") => `<w:r><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/><w:sz w:val="${fontSize}"/>${bold?"<w:b/>":""}${underline?'<w:u w:val="single"/>':""}${color?`<w:color w:val="${color}"/>`:""}</w:rPr><w:t xml:space="preserve">${x(text)}</w:t></w:r>`;
+  const br='<w:r><w:br/></w:r>';
+  const multiline=text=>String(text).split(/\r?\n/).map(line=>run(line)).join(br);
+  const paragraph=(content,after=0,before=0) => `<w:p><w:pPr><w:spacing w:before="${Math.round(before*scale)}" w:after="${Math.round(after*scale)}" w:line="240" w:lineRule="auto"/></w:pPr>${content}</w:p>`;
+  const cell=(content,width) => `<w:tc><w:tcPr><w:tcW w:w="${width}" w:type="dxa"/><w:vAlign w:val="top"/></w:tcPr>${content}</w:tc>`;
+  const table=(left,right,leftWidth=6894) => `<w:tbl><w:tblPr><w:tblW w:w="10772" w:type="dxa"/><w:tblLayout w:type="fixed"/><w:tblCellMar><w:top w:w="0" w:type="dxa"/><w:left w:w="0" w:type="dxa"/><w:bottom w:w="0" w:type="dxa"/><w:right w:w="0" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w="${leftWidth}"/><w:gridCol w:w="${10772-leftWidth}"/></w:tblGrid><w:tr>${cell(left,leftWidth)}${cell(right,10772-leftWidth)}</w:tr></w:tbl>`;
+  const numbered=(number,content) => `<w:p><w:pPr><w:tabs><w:tab w:val="left" w:pos="220"/></w:tabs><w:ind w:left="220" w:hanging="220"/><w:spacing w:after="${Math.round(30*scale)}" w:line="240" w:lineRule="auto"/></w:pPr>${run(`${number}.`)}<w:r><w:tab/></w:r>${content}</w:p>`;
+  let body=paragraph(run(data.type==="LAPKA"?"O.82":"O.83",true),60);
+  body+=table(paragraph(run(docTitle(data.type),true,true)+br+run("No. ",true)+run("MANUAL",true,false,"FF0000")+run(`/${data.type}/JAKK/${data.date.month}/${data.date.year}`,true)),paragraph(run(`KA ${data.number}, DINAS RANGKAIAN ${data.name}, Tgl ${data.date.text}`,true,true)+br+run(`KA PNP Relasi ${data.relation}`,true)));
+  body+=paragraph("",30);
+  let number=0;
+  for(const person of data.crew) body+=numbered(++number,run(`${person.role} `,true)+run(`${person.name||"........................"}${person.nipp?` (${person.nipp})`:""} ${data.date.text} dinas ${data.relation}`));
+  body+=numbered(++number,run("LOK ",true)+run(data.locomotive));
+  body+=numbered(++number,run("RANGKAIAN ",true)+run(formationText(data)+".")+br+run("Berat : ")+run(data.weight,true,true)+run(" Ton"));
+  const taspatRuns=text=>String(text).split(/\r?\n/).map(line=>speedParts(line).map(part=>run(part.text,part.bold)).join("")).join(br);
+  body+=numbered(++number,run("TASPAT :",true)+data.taspat.map(text=>br+taspatRuns(text)).join(""));
+  body+=numbered(++number,run("Catatan lain dalam perjalanan :")+(data.notes?br+multiline(data.notes):""));
+  body+=paragraph("",0,480);
+  const signature=(heading,person) => paragraph(run(heading,true,true),480)+paragraph(run(person.name||"..................................",true)+br+run(`Nipp. ${person.nipp}`,true));
+  body+=table(signature("Petugas Schowing/TKA",data.schowing),signature("PPKA / PAP",data.officer),7325);
+  body+=paragraph(run("Keterangan : (*) Input Kru KA Manual"),0,180);
+  body+='<w:sectPr><w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="567" w:right="567" w:bottom="567" w:left="567" w:header="283" w:footer="283"/></w:sectPr>';
+  const xml='<?xml version="1.0" encoding="UTF-8" standalone="yes"?>';
+  const documentXML=xml+`<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>${body}</w:body></w:document>`;
+  const stylesXML=(xml+'<w:styles xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:docDefaults><w:rPrDefault><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/><w:sz w:val="16"/></w:rPr></w:rPrDefault></w:docDefaults><w:style w:type="paragraph" w:default="1" w:styleId="Normal"><w:name w:val="Normal"/><w:pPr><w:spacing w:after="0"/></w:pPr></w:style></w:styles>').replace('w:sz w:val="16"',`w:sz w:val="${fontSize}"`);
+  return makeZip([
+    ["[Content_Types].xml",xml+'<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/><Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/></Types>'],
+    ["_rels/.rels",xml+'<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships>'],
+    ["word/document.xml",documentXML],
+    ["word/styles.xml",stylesXML],
+    ["word/_rels/document.xml.rels",xml+'<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>']
+  ]);
+}
+
+function downloadWord() {
+  if (!validate()) return;
+  render(); fitPaper();
+  const data=formData();
+  data.printScale=Number($("documentPreview").querySelector(".report-content").style.getPropertyValue("--report-fit")) || 1;
+  const blob=docxBlob(data), url=URL.createObjectURL(blob), link=document.createElement("a");
+  link.href=url; link.download=filename(data,"docx"); document.body.appendChild(link); link.click(); link.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),30000);
+  toast(`${activeType} berhasil dibuat. Periksa hasilnya di folder unduhan.`);
+}
+
+buildCrewFields();
+addTaspat(DEFAULT_TASPAT,false);
+selectTrain(DAFTAR_KA[0]);
+$("reportForm").addEventListener("submit", event=>event.preventDefault());
+$("reportForm").addEventListener("input", event=>{event.target.removeAttribute("aria-invalid"); $("validationMessage").hidden=true; if(event.target.id!=="trainSearch") render();});
+$("trainSearch").addEventListener("focus",()=>{ $("trainSearch").select(); showOptions();});
+$("trainSearch").addEventListener("input",showOptions);
+$("trainSearch").addEventListener("keydown",searchKeyboard);
+$("trainSearch").addEventListener("blur",()=>setTimeout(()=>{if(!$("trainOptions").contains(document.activeElement)) closeOptions();},120));
+$("trainOptions").addEventListener("click",event=>{const option=event.target.closest(".train-option"); if(option) selectTrain(options[Number(option.dataset.index)]);});
+document.addEventListener("pointerdown",event=>{if(!event.target.closest(".search-wrap")) closeOptions();});
+$("addTaspat").addEventListener("click",()=>addTaspat());
+document.querySelectorAll(".document-tabs button").forEach(tab=>{
+  tab.addEventListener("click",()=>setDocumentType(tab.dataset.type));
+  tab.addEventListener("keydown",event=>{if(["ArrowLeft","ArrowRight","Home","End"].includes(event.key)){event.preventDefault();const type=event.key==="Home"?"LAPKA":event.key==="End"?"LKDR":activeType==="LAPKA"?"LKDR":"LAPKA";setDocumentType(type);$(type==="LAPKA"?"tabLapka":"tabLkdr").focus();}});
+});
+$("printButton").addEventListener("click",printReport);
+$("wordButton").addEventListener("click",downloadWord);
+window.addEventListener("beforeprint",preparePrint);
+window.addEventListener("afterprint",()=>{document.title=originalTitle;});
+window.addEventListener("pageshow",render);
+document.addEventListener("visibilitychange",()=>{if(!document.hidden) render();});
+setInterval(()=>{if(jakartaDate().iso!==lastDate) render();},30000);
+if(typeof ResizeObserver!=="undefined") new ResizeObserver(fitPaper).observe(document.querySelector(".paper-stage"));
+else window.addEventListener("resize",fitPaper);
+
+</script>
+</body>
+</html>
